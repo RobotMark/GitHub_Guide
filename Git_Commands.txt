@@ -1,0 +1,110 @@
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+X                                           X    
+X              Git Shortcuts                X
+X                                           X
+X               Mark Maupin                 X
+X               2020.08.30                  X
+X                                           X  
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+=============================================
+launch VS Code from gitbash
+=============================================
+code <name of folder>
+
+=============================================
+see status of all edited / uncommits
+=============================================
+git status
+
+=============================================
+add files to git
+=============================================
+git add my_file.txt
+
+=============================================
+commit files to git
+=============================================
+git commit -m "commit message for log"
+
+=============================================
+see history of all commits
+=============================================
+git log
+
+=============================================
+see one line history of all commits
+=============================================
+git log --oneline
+
+=============================================
+add remote origin (url) in github
+=============================================
+git remote add origin https://github.com/.......
+
+=============================================
+push local repo to Github
+=============================================
+git push origin master
+
+=============================================
+sync Github to local repo
+=============================================
+git pull origin master
+
+=============================================
+create shortcut for sync'ing master 
+branch on Github to rembote branch 
+master from origin
+=============================================
+git branch --set-upstream-to=origin/master master
+
+## now you can simply type "git pull"
+
+=============================================
+create a feature branch
+=============================================
+git branch feature-1
+
+## creates a branch called "feature-1"
+
+=============================================
+see branches
+=============================================
+git branch
+
+=============================================
+switch to a different branch
+=============================================
+git checkout feature-1
+
+=============================================
+delete a branch (cannot be active branch)
+=============================================
+git branch -D feature-2
+
+=============================================
+push branch to Github
+=============================================
+git push origin feature-1
+
+=============================================
+pull branch from GitHub
+=============================================
+git pull origin feature-2
+
+## pull the branched named "feature-2"
+
+## then you need to track the branch from origin
+
+git checkout --track origin/feature-2
+
+=============================================
+merge branch onto master branch
+=============================================
+git merge dev
+
+# merge dev branch into master branch
+
+
